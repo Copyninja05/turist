@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.box-1{
+    min-height: 70vh;
+    width:100%;
+    /* background-color: antiquewhite; */
+    background-image: url(./pngwing.com\ -\ 2025-08-28T130800.302\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 120%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.box-2{
+    min-height: 70vh;
+    width:100%;
+    /* background-color: antiquewhite; */
+    background-image: url(./pngwing.com\ -\ 2025-08-28T130800.302\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    /* background-position: %; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.pp{
+    width:50%;
+    /* background-color: aqua; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-4{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+   font-family: "Poppins", sans-serif;
+   font-size: 17px;  
+   width:70%;
+
+}
+
+.road{
+    position: absolute;
+    top:14%;
+    left: 15%;
+}
+
+
+
+
+
+
+.service{
+    width:100%;
+    min-height: 130vh;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    overflow: hidden;
+    gap:40px;
+    border-bottom-left-radius: -50%;
+    border-bottom-right-radius: -50%;
+    position: relative;
+    clip-path: path("m0 0 h100% v85% c70% 100%,30% 100%,0 85% z");
+}
+
+
+
+
+.service h1{
+            font-family: "Poppins", sans-serif;
+
+}
+
+.service p{
+    width:80%;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.roll{
+    display: flex;
+    gap:20px;
+    width: 200%;
+    height:450px;
+    animation: f1 10s linear infinite;
+    margin-top: 25px;
+    align-items: center;
+    
+    
+}
+
+
+.roll:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes f1 {
+    0%{
+            transform: translatex(-5%);
+    }
+
+    95%{
+        transform: translatex(0%);
+    }
+
+    100%{
+        transform: translatex(2%);
+    }
+    
+}
+
+.rol{
+    width:15%;
+
+    overflow: hidden;
+    height: 350px;
+    gap:20px;
+    border-radius: 35%;
+    
+    transition: all 0.5s linear;
+    position: relative;
+    
+
+}
+
+.rol:hover{
+    transform: scale(1.1);
+}
+
+.h1{
+    position: absolute;
+    bottom:10%;
+
+    z-index: 45;
+    text-align: center;
+    width:100%;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    opacity: 0;
+    transition: all 0.5s linear;
+
+}
+
+.rol:hover .h1{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+
+.iconss{
+       top: 50%;
+    
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    
+    left: 42%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s linear;
+    background-color: white;
+    color: gold;
+    
+}
+
+
+.rol:hover .iconss{
+    opacity: 1;
+}
+
+
+.ser-img{
+    width:100%;
+    height:300px;
+    background-image: url(./Component\ 8\ \(1\).png);
+    border-radius: -50%;
+    
+}
+
+
+.service{
+    background-image: url(./Component\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+.white{
+  
+    background-color: white;
+    box-shadow: -3px 104px 58px white;
+    padding:40px;
+    height:60vh;
+}
+
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+
+    @keyframes f1 {
+    0%{
+            transform: translatex(-5%);
+    }
+
+    95%{
+        transform: translatex(33%);
+    }
+
+    100%{
+        transform: translatex(33%);
+    }
+    
+}
+
+
+.service{
+    overflow: hidden;
+}
+
+
+.roll{
+    height: 150px;
+}
+
+
+.service h1{
+    font-size: 20px;
+}
+
+.service{
+    gap:10px;
+}
+
+.roll{
+    margin-top: 20px;
+    width:440%;
+
+}
+
+.rol{
+    width:34%;
+    height:146px;
+}
+
+
+.service p {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 15px;
+}
+} 
+
+
+
+@media only screen and (min-width:400px) and (max-width:600px){
+            .rol{
+    width:34%;
+    height:170px;
+}
+
+.roll{
+    height: 230px;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width:500px) and (max-width:600px){
+
+              .rol{
+    width:34%;
+    height:220px;
+}
+
+
+.roll{
+    height: 280px;
+}
+}
+
+
+                                /* //test */
+
+
+                                
